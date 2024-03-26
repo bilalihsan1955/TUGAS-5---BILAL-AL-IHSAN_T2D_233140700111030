@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --banner-background-color: #007bff;
+    --navbar-background-color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+/* navbar */
+.navbar {
+    font-weight: 500;
+    background-color: transparent;
+    transition: background-color 0.3s ease-out;
+    animation: fadeIn 1s forwards;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  
+  .navbar-logo {
+    font-family: "league spartan";
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.navbar-logo img {
+    height: 2.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    font-family: kanit;
+    margin: 0;
+    padding: 0;
+    margin-right: 5%;
+}
+
+.navbar-links li {
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+  .navbar-links li:last-child {
+      margin-right: 0;
+  }
+  
+  .navbar-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      line-height: 4rem;
+  }
+
+#navbar.scrolled {
+    background-color: var(--navbar-background-color);
+    transition: background-color 0.3s ease-in;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: #0073ff;
+}
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  /* banner */
+
+  .banner{
+    background: linear-gradient(to top, #5a003b, #ff00a6);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .banner h1{
+    padding: 45vh 10vh 30vh 10vh ;
+    margin: auto;
+    color: #fff;
+    font-size: 400%;
+    margin: 0;
+    font-weight: bolder;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+  }
+
+  /* welcomne */
+  #welcome{
+    height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    color: #333;
+  }
+
+  .container-welcome{
+    padding: 35vh 15vh 20vh 15vh;
+  }
+
+  #welcome h1{
+    margin: auto;
+    font-size: 400%;
+    margin: 0;
+    font-weight: bolder;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+  }
+
+  #welcome p{
+    margin-top: 2rem;
+  }
+
+  /* services */
+  #services{
+    /* height: 100vh; */
+    background: linear-gradient(to top, #ff00a6 ,#5a003b);
+    text-align: center;
+    color: #ffffff;
+    align-items: center;
+  }
+
+  .container-services{
+    padding: 25vh 0vh 25vh 0vh;
+  }
+
+  #services h1{
+    margin: auto;
+    font-size: 400%;
+    margin: 0;
+    font-weight: bolder;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+  }
+
+  #services p{
+    margin-top: 2rem;
+  }
+
+  #services .row {
+    margin-top: 5rem;
+    width: auto;
+    padding: 0vh 25vh 0vh 25vh;
+  }
+  .card {
+    margin: 0 auto;
+    display: block;
+    max-width: 50vh;
+    height: 100%;
+    padding-bottom: 3.5rem;
+  }
+
+  #services .card img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    /* height: 100%; */
+    padding: 5rem 5rem 1rem 5rem;
+  }
+
+  #services.scrolled .card {
+    animation: fadeIn 0.5s forwards;
+  }
+
+  #services.not-scrolled .card {
+    animation: none;
+  }
+
+  /* footer */
+  footer{
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 0.1rem;
+    /* height: 30vh; */
+  }
+
+  .container-footer-paragraph{
+    padding: 5rem 8rem 2rem 8rem;
+  }
+  .container-footer-paragraph p{
+    padding-top: 2rem
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+  }
+  footer a:hover{
+    text-decoration: none;
+    color:#0073ff;
+    font-size: small;
+  }
+
+  footer .linkmy p{
+    text-align: center;
+    font-size: 10px;
+  }
+
+  footer img{
+      height: 2.5rem;
+      width: auto;
+  }
+
+  footer .linkmy a{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+  }

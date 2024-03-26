@@ -1,0 +1,58 @@
+#formcount{
+    /* height: 100vh; */
+    background: linear-gradient(to top, #ff00a6 ,#5a003b);
+    color: #ffffff;
+    align-items: center;
+    height: 130vh;
+    padding: 15vh 25vh 20vh 25vh;
+    align-content: center;
+    align-items: center;
+}
+#formcount h1{
+    margin: auto;
+    font-size: 400%;
+    margin: 0;
+    font-weight: bolder;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+    margin-bottom: 3rem;
+  }
+
+  #formcount p{
+    margin-top: 2rem;
+  }
+
+  #formcount img{
+    width: 50vh;
+  }
+
+  #formcount .row {
+    margin-top: 5rem;
+    width: auto;
+    align-items: center;
+  }
+
+  #formcount label {
+    color: black;
+    text-align:left ;
+  }
+
+#formcount .card-form{
+    padding: 3vh 15vh 15vh 15vh;
+    color: #00000000;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: block;
+    margin: 0 auto;
+    /* width: 50%; */
+    /* height: 50%; */
+    /* padding: 5rem 5rem 1rem 5rem; */
+  }
+
+  #formcount.scrolled .card {
+    animation: fadeIn 0.5s forwards;
+  }
+
+  #formcount.not-scrolled .card {
+    animation: none;
+  }
