@@ -10,12 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- css -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/stylecount.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=9">
+    <link rel="stylesheet" href="../assets/css/stylecount.css?v=5">
 
 </head>
 
@@ -25,19 +24,19 @@
         <div class="container-fluid">
             <h1>Let's Get Started</h1>
             <div class="card-form">
-                <div class="row">
+                <div class="row align-items-center justify-content-center">
                     <div class="modal-header">
                         <h5 class="modal-title gg-primary"></h5>
                         <a href="../index.php#services">
                             <i class="fa fa-close" style="font-size:3rem;"></i>
                         </a>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-md-5 text-center mb-4 mb-md-0">
                         <img src="../assets/img/Triangular.png" alt="Nature">
                     </div>
-                    <div class="col-sm-6 offset-md-3">
+                    <div class="col-md-7">
                         <form method="post">
-                            <h1 style="color: black;font-size:5vh;text-align:left;">Volume Kerucut</h1>
+                            <h1 class="mb-4 fw-bold text-dark fs-2 text-start">Volume Kerucut</h1>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Jari-Jari</label>
                                 <input type="number" name="r" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="masukkan jati-jari" required>

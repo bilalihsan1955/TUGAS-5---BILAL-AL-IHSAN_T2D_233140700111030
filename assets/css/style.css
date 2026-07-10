@@ -32,33 +32,22 @@
   
   .navbar-logo {
     font-family: "league spartan";
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-left: 3rem;
-}
+  }
 
-.navbar-logo img {
+  .navbar-logo img {
     height: 2.5rem;
     width: auto;
-    margin-right: 1rem;
-}
+  }
 
-.navbar-links {
-    display: flex;
-    list-style: none;
+  .navbar-links {
     font-family: kanit;
-    margin: 0;
-    padding: 0;
-    margin-right: 5%;
-}
+  }
 
-.navbar-links li {
-    text-decoration: none;
-    margin-right: 3rem;
-}
+  .navbar-links .nav-item {
+    margin-right: 1.5rem;
+  }
 
-  .navbar-links li:last-child {
+  .navbar-links .nav-item:last-child {
       margin-right: 0;
   }
   
@@ -92,38 +81,44 @@
   
   /* banner */
 
-  .banner{
+  .banner {
     background: linear-gradient(to top, #5a003b, #ff00a6);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .banner h1{
-    padding: 45vh 10vh 30vh 10vh ;
-    margin: auto;
     color: #fff;
     font-size: 400%;
     margin: 0;
+    padding: 0 1rem;
     font-weight: bolder;
     text-align: center;
     animation: fadeIn 1s forwards;
   }
 
-  /* welcomne */
-  #welcome{
-    height: 100vh;
+  #Welcome {
+    min-height: 100vh;
     background-color: #ffffff;
     text-align: center;
     color: #333;
+    padding: 4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .container-welcome{
-    padding: 35vh 15vh 20vh 15vh;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
-  #welcome h1{
+  #Welcome h1{
     margin: auto;
-    font-size: 400%;
+    font-size: 3rem;
     margin: 0;
     font-weight: bolder;
     text-align: center;
@@ -134,22 +129,23 @@
     margin-top: 2rem;
   }
 
-  /* services */
-  #services{
-    /* height: 100vh; */
+  #services {
     background: linear-gradient(to top, #ff00a6 ,#5a003b);
     text-align: center;
     color: #ffffff;
-    align-items: center;
+    padding: 4rem 1rem;
+    min-height: 100vh;
   }
 
   .container-services{
-    padding: 25vh 0vh 25vh 0vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   #services h1{
     margin: auto;
-    font-size: 400%;
+    font-size: 3rem;
     margin: 0;
     font-weight: bolder;
     text-align: center;
@@ -161,24 +157,37 @@
   }
 
   #services .row {
-    margin-top: 5rem;
-    width: auto;
-    padding: 0vh 25vh 0vh 25vh;
+    margin-top: 3rem;
   }
   .card {
-    margin: 0 auto;
-    display: block;
-    max-width: 50vh;
-    height: 100%;
-    padding-bottom: 3.5rem;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    max-width: 350px;
+    padding-bottom: 2rem;
   }
 
   #services .card img {
     display: block;
     margin: 0 auto;
     width: 100%;
-    /* height: 100%; */
-    padding: 5rem 5rem 1rem 5rem;
+    padding: 2rem;
+    object-fit: contain;
+  }
+
+  /* Make sure buttons in cards are clickable even if carousel controls overlap */
+  .card .btn {
+    position: relative;
+    z-index: 10;
+  }
+
+  #demo {
+    padding: 0 8%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 8%;
+    z-index: 5;
   }
 
   #services.scrolled .card {
@@ -198,7 +207,10 @@
   }
 
   .container-footer-paragraph{
-    padding: 5rem 8rem 2rem 8rem;
+    padding: 3rem 1rem 2rem 1rem;
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: left;
   }
   .container-footer-paragraph p{
     padding-top: 2rem
@@ -229,4 +241,33 @@
     text-align: center;
     font-size: 10px;
     color: white;
+  }
+
+  @media (max-width: 991px) {
+    .banner h1, #Welcome h1, #services h1 {
+      font-size: 2rem;
+    }
+    .card {
+      margin-bottom: 2rem;
+    }
+    .navbar-links .nav-item {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .navbar-collapse {
+      background-color: var(--navbar-background-color);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    #Welcome, #services {
+      padding: 8rem 1rem;
+    }
+    .banner h1, #Welcome h1, #services h1 {
+      font-size: 4rem;
+    }
   }

@@ -1,16 +1,16 @@
-#formcount{
-    /* height: 100vh; */
+#formcount {
     background: linear-gradient(to top, #ff00a6 ,#5a003b);
     color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 130vh;
-    padding: 15vh 25vh 20vh 25vh;
-    align-content: center;
-    align-items: center;
+    padding: 5rem 1rem;
 }
 #formcount h1{
     margin: auto;
-    font-size: 400%;
+    font-size: 2rem;
     margin: 0;
     font-weight: bolder;
     text-align: center;
@@ -23,7 +23,9 @@
   }
 
   #formcount img{
-    width: 50vh;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 
   #formcount .row {
@@ -37,17 +39,28 @@
     text-align:left ;
   }
 
-#formcount .card-form{
-    padding: 3vh 15vh 15vh 15vh;
-    color: #00000000;
+#formcount .card-form {
+    position: relative;
+    padding: 2rem 1rem;
     background-color: #ffffff;
     border-radius: 1rem;
     display: block;
     margin: 0 auto;
-    /* width: 50%; */
-    /* height: 50%; */
-    /* padding: 5rem 5rem 1rem 5rem; */
-  }
+    width: 100%;
+    max-width: 900px;
+}
+#formcount .modal-header {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+}
+#formcount .modal-header a {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 100;
+    text-decoration: none;
+}
 
   #formcount.scrolled .card {
     animation: fadeIn 0.5s forwards;
@@ -55,4 +68,13 @@
 
   #formcount.not-scrolled .card {
     animation: none;
+  }
+
+  @media (min-width: 992px) {
+    #formcount h1 {
+      font-size: 4rem;
+    }
+    #formcount .card-form {
+      padding: 3rem 2rem;
+    }
   }

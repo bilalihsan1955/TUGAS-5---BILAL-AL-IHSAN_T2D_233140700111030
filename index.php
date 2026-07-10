@@ -10,10 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384">
 
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=9">
 
 </head>
 
@@ -21,17 +20,28 @@
 
     <header id="header">
         <!-- navbar -->
-        <nav>
-            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                <div class="navbar-logo">
-                    <a href="#home"><img src="assets/img/logo math.png" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container">
+                <a class="navbar-brand navbar-logo" href="#home">
+                    <img src="assets/img/logo math.png" alt="JagoMath Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto navbar-links">
+                        <li class="nav-item">
+                            <a class="nav-link scrollto active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#Welcome">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#services">Services</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="navbar-links">
-                    <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-                    <li><a href="#Welcome" class="nav-link scrollto">About Us</a></li>
-                    <li><a href="#services" class="nav-link scrollto">services</a></li>
-                </ul>
-            </nav>
+            </div>
         </nav>
     </header>
 
@@ -42,14 +52,14 @@
     </section>
 
     <section id="Welcome">
-        <div class="container-welcome .welcome">
+        <div class="container container-welcome">
             <h1>Our Goals</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi odio odit perferendis culpa suscipit. Minima obcaecati maiores quo illum quis aliquid ad magni repellendus, ducimus quidem adipisci veniam cumque temporibus suscipit eligendi eos quae est ut voluptatibus consectetur accusamus, dolorem voluptatum voluptatem vitae! Sint quis maxime libero accusantium omnis sit tenetur, veniam modi ullam vero impedit at voluptate ipsum sequi commodi? Soluta sapiente quidem, ullam in dolores asperiores debitis delectus iste deleniti assumenda sit repellat ea. Neque debitis beatae nobis aliquid vel commodi fugit, adipisci perferendis iste eos in ad, dolor cumque, dolore magnam dicta ratione? Possimus, odio placeat.</p>
         </div>
     </section>
 
     <section id="services">
-        <div class="container-services .services">
+        <div class="container container-services">
             <h1>Let's Start</h1>
 
             <!-- Carousel -->
@@ -58,9 +68,9 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card" style="width:50vh">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                                <div class="card">
                                     <img class="card-img-top" src="assets/img/Triangle.png" alt="Card image">
                                     <div class="card-body">
                                         <h4 class="card-title">Segitiga</h4>
@@ -71,10 +81,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card" style="width:50vh">
-                                    <img class="card-img-top" src="assets/img/Triangular.png" alt="Card image"">
-                                    <div class=" card-body">
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/img/Triangular.png" alt="Card image">
+                                    <div class="card-body">
                                     <h4 class="card-title">Limas Segitiga</h4>
                                     <p class="card-text">Volume Limas Segitiga <br> V = 1/3 × LA × T</p>
                                     <a href="process/limasSegitiga.php">
@@ -83,8 +93,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card" style="width:50vh">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                            <div class="card">
                                 <img class="card-img-top" src="assets/img/Cone.png" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">Kerucut</h4>
@@ -100,9 +110,9 @@
 
                 <!-- slide 2 -->
                 <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card" style="width:50vh">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                            <div class="card">
                                 <img class="card-img-top" src="assets/img/Square.png" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">Persegi</h4>
@@ -113,8 +123,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card" style="width:50vh">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                            <div class="card">
                                 <img class="card-img-top" src="assets/img/Cube.png" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">Kubus</h4>
@@ -125,8 +135,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card" style="width:50vh">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                            <div class="card">
                                 <img class="card-img-top" src="assets/img/RectangularPrism.png" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">Balok</h4>
@@ -142,9 +152,9 @@
 
                 <!-- slide 3 -->
                 <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card" style="width:50vh">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                            <div class="card">
                                 <img class="card-img-top" src="assets/img/Circle.png" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">Lingkaran</h4>
@@ -155,8 +165,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card" style="width:50vh">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                            <div class="card">
                                 <img class="card-img-top" src="assets/img/Sphere.png" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">Bola</h4>
@@ -167,8 +177,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card" style="width:50vh">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
+                            <div class="card">
                                 <img class="card-img-top" src="assets/img/Circlediameter.png" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">Lingkaran</h4>
