@@ -32,7 +32,7 @@
                         </a>
                     </div>
                     <div class="col-md-5 text-center mb-4 mb-md-0">
-                        <img src="../assets/img/Triangular.png" alt="Nature">
+                        <img src="../assets/img/cone.png" alt="Nature">
                     </div>
                     <div class="col-md-7">
                         <form method="post">
